@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <script src="./js/markdown.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.3.js"  integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="./js/model.js"></script>
+  <script src="./js/view.js"></script>
+  <script src="./js/controller.js"></script>
+  <script src="./css/application.css"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">README Helper</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-center">
+          <li><a href="https://github.com/d-lange/How-to-README">David Lange</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+  <div class="modal-body row">
+  <div class="col-md-6">
+      <div class='container'>
+        <h4>Enter Markdown in this textfield and see how it affects the text!</h4>
+        <textarea class="markdown-input" cols="90" rows="35" id="input">
+#Readme
+
+# This is an H1
+
+## This is an H2
+
+### This is an H3
+
+**This text will be bold**
+__This will also be bold__ 
+
+_You **can** combine them_
+
+*This text will be italic*
+_This will also be italic_
+
+####How to make a list:
+* An asterisk creates a bullet point
+- A dash also creates a bullet point
++ As well as the addition symbol!
+
+####How to show some code:
+
+open ``index.html``
+ 
+> def helloWorld
+
+
+     new line and indent for a box
+
+[Link](https://github.com/d-lange/How-to-README)
+
+![image](https://coderwall-assets-0.s3.amazonaws.com/uploads/picture/file/1932/gs.png)
+
+</textarea>
+      </div>
+  </div>
+  <div class="col-md-6">
+      <div id='output'>
+      </div>
+  </div>
+</div>
+
+
+</body>
+</html>
